@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
     android:orientation="vertical"
+    android:padding="13dp"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+
+    android:background="@drawable/bg1">
 
     <TextView
         android:layout_width="wrap_content"
@@ -21,35 +27,64 @@
     <EditText
 
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="45dp"
         android:id="@+id/name"
         android:hint="Enter your name"
-        android:textColor="#000000"/>
+        android:drawableLeft="@drawable/ic_person"
+        android:padding="6dp"
+        android:drawablePadding="6dp"
+        android:textColor="#000000"
+        android:background="@drawable/shape"
+        android:layout_marginTop="15dp"/>
+
     <EditText
 
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="45dp"
         android:id="@+id/email"
+        android:drawablePadding="6dp"
+        android:background="@drawable/shape"
+        android:drawableLeft="@drawable/ic_mail"
         android:inputType="textEmailAddress"
         android:layout_marginTop="15dp"
+        android:padding="6dp"
         android:hint="Enter your mail"
         android:textColor="@color/black"/>
     <EditText
 
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="45dp"
         android:layout_marginTop="15dp"
+        android:drawablePadding="6dp"
         android:id="@+id/number"
+        android:background="@drawable/shape"
+        android:drawableLeft="@drawable/ic_phone"
         android:inputType="phone"
+        android:padding="6dp"
         android:hint="Enter your number"/>
-    <EditText
 
+
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/pass"
         android:layout_marginTop="15dp"
-        android:hint="Enter your password"
-        android:inputType="textPassword"/>
+        app:passwordToggleEnabled="true"
+        app:boxStrokeWidth="0dp"
+        app:startIconDrawable="@drawable/ic_pass"
+        app:startIconTint="#090000"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape"
+            android:padding="6dp"
+
+            android:id="@+id/pass"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
     <Spinner
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -82,12 +117,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Telugu"
+        android:buttonTint="@color/black"
         android:id="@+id/tel"
         android:layout_marginTop="15dp"/>
     <CheckBox
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Hindi"
+        android:buttonTint="@color/black"
         android:id="@+id/hin"
         android:layout_marginTop="9dp"/>
 
@@ -95,6 +132,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="English"
+        android:buttonTint="@color/black"
         android:id="@+id/eng"
         android:layout_marginTop="9dp"/>
     <TextView
@@ -102,14 +140,17 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:id="@+id/dob"
+        android:onClick="dob"
         android:text="Click here to add DOB"
         android:gravity="center"/>
     <Button
         android:layout_width="match_parent"
+
         android:layout_height="wrap_content"
         android:onClick="save"
         android:text="submit"
-        android:layout_marginTop="15dp"/>
+        android:layout_marginTop="15dp"
+        android:background="@drawable/shape"/>
 
 
 
@@ -118,3 +159,5 @@
 
 
 </LinearLayout>
+
+</ScrollView>
