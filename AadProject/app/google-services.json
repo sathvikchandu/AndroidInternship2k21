@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "242245066059",
+    "project_id": "fir-trail-fc699",
+    "storage_bucket": "fir-trail-fc699.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:242245066059:android:ed57e11961216e79171cce",
+        "android_client_info": {
+          "package_name": "com.example.aadproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "242245066059-tr8mrd8gmqr2sku2jlvj6bu2r8cpd4ou.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVnUuDjTALoP-8K_dl2yZPGwSLdyMEqCo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "242245066059-tr8mrd8gmqr2sku2jlvj6bu2r8cpd4ou.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
